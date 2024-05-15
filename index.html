@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Your Friend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<!-- Body-->
+<body>
+    <div class="container">
+    <!-- Header Section-->
+    <header>
+        <h1>Welcome to the Ultimate Friend Support Page!</h1>
+        <p>You’re just one click (or two) away from making a huge difference in my life.</p>
+    </header>
+    <main>
+        <!-- Main Section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Nata'ani! I’m a fun-loving, adventurous person who needs a little help from awesome friends like you. Whether it's for a new project, a pizza night, or just to keep the good times rolling, your support means everything to me!</p>
+        </section>
+        <section id="donate">
+            <h2>Ready to Be My Hero?</h2>
+            <p>Click one of the buttons below to donate and join the elite group of amazing friends!</p>
+            <!-- Buttons-->
+            <!-- PayPal-->
+            <div id="donate-button-container">
+                <div id="donate-button"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                        <script>
+                            PayPal.Donation.Button({
+                            env:'production',
+                            hosted_button_id:'D42AM46BDQK6E',
+                            image: {
+                                src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                                alt:'Donate with PayPal button',
+                                title:'PayPal - The safer, easier way to pay online!',
+                            }
+                            }).render('#donate-button');
+                        </script>
+            </div>
+            <!-- Cash App-->
+            <form action="https://cash.app/$Tonibaboni" target="_blank">
+                <button class="cash-app">Cash App</button>
+            </form>
+            <!-- Venmo-->
+            <form action="https://venmo.com/u/BitsNata" target="_blank">
+                <button role="button" class="venmo">Venmo</button>
+            </form>
+                
+        </section>
+    </main>
+    <footer>
+        <!-- Footer Section-->
+        <p>Thank you so much for your support! Your $20 means the world to me.</p>
+        <p>money is nonrefundable</p>
+    </footer>
+    </div>
+</body>
+</html>
+
